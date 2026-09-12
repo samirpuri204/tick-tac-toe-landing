@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tick Tac Toe — Play the Classic Anytime, Anywhere</title>
+  <meta name="description" content="Play the timeless classic Tic Tac Toe with a clean, simple, and fun experience. Challenge a smart AI or play with a friend on the same device. Free on Google Play." />
+  <link rel="canonical" href="https://play.google.com/store/apps/details?id=com.susmita.game" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tick Tac Toe — Play the Classic Anytime, Anywhere" />
+  <meta property="og:description" content="Challenge a smart AI or play with a friend on the same device. Clean, smooth and lightweight. Free on Google Play." />
+  <meta property="og:url" content="https://play.google.com/store/apps/details?id=com.susmita.game" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0a0f1e" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0f1e'/%3E%3Cpath d='M23 3v58M41 3v58M3 23h58M3 41h58' stroke='%2326elfb' stroke-opacity='0'/%3E%3Cpath d='M23 4v56M41 4v56M4 23h56M4 41h56' stroke='%233b4a6b' stroke-width='2.5' stroke-linecap='round'/%3E%3Cpath d='M8 8l10 10M18 8L8 18' stroke='%2322d3ee' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='32' r='6.5' stroke='%23fb7185' stroke-width='4' fill='none'/%3E%3Cpath d='M46 46l10 10M56 46L46 56' stroke='%2322d3ee' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Tick tac toe",
+    "applicationCategory": "Game",
+    "operatingSystem": "Android",
+    "description": "Play the timeless classic Tic Tac Toe with a clean, simple, and fun experience. Challenge a smart AI or play with a friend on the same device.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "author": { "@type": "Organization", "name": "Puja Sets Nepal" },
+    "installUrl": "https://play.google.com/store/apps/details?id=com.susmita.game"
+  }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <svg class="brand-icon" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#111a30"/>
+          <path d="M23 4v56M41 4v56M4 23h56M4 41h56" stroke="#33415e" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M8 8l10 10M18 8L8 18" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="32" cy="32" r="6.5" stroke="#fb7185" stroke-width="4" fill="none"/>
+          <path d="M46 46l10 10M56 46L46 56" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <span>Tick<em>Tac</em>Toe</span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="#how-to-play">How to Play</a>
+        <a href="#modes">Game Modes</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" href="https://play.google.com/store/apps/details?id=com.susmita.game" target="_blank" rel="noopener">
+        <svg class="play-tri" viewBox="0 0 512 566" aria-hidden="true">
+          <path fill="#00c4ff" d="M25.5 12.5C20 18.3 16.8 27.2 16.8 38.6v488.8c0 11.4 3.2 20.3 8.7 26.1l1.4 1.3L282.7 299v-6.2L26.9 11.2l-1.4 1.3z"/>
+          <path fill="#ffce00" d="M365.7 384.3 282.7 299v-6.2l83-85 .2.1 98.4 55.9c28.1 16 28.1 42.1 0 58.1l-98.4 55.9-.2.5z"/>
+          <path fill="#ff3a44" d="M365.9 383.8 282.7 299 25.5 553.5c9.3 9.8 24.6 11 41.9 1.2l298.5-170.9"/>
+          <path fill="#00f076" d="M365.9 214.2 67.4 43.3C50.1 33.5 34.8 34.7 25.5 44.5L282.7 299l83.2-84.8z"/>
+        </svg>
+        Get the App
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-cyan"></div>
+        <div class="orb orb-pink"></div>
+        <div class="hero-grid"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="pill">🎉 Free on Google Play — Rated 3+</span>
+          <h1>The classic game of <span class="grad-x">X</span> <span class="muted-and">and</span> <span class="grad-o">O</span>, reimagined.</h1>
+          <p class="lead">
+            Enjoy the timeless Tic Tac Toe with a clean, simple, and fun experience.
+            Challenge a smart AI or play with a friend on the same device — perfect for
+            players of all ages.
+          </p>
+          <div class="hero-actions">
+            <a class="btn-store" href="https://play.google.com/store/apps/details?id=com.susmita.game" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+              <svg class="play-tri" viewBox="0 0 512 566" aria-hidden="true">
+                <path fill="#00c4ff" d="M25.5 12.5C20 18.3 16.8 27.2 16.8 38.6v488.8c0 11.4 3.2 20.3 8.7 26.1l1.4 1.3L282.7 299v-6.2L26.9 11.2l-1.4 1.3z"/>
+                <path fill="#ffce00" d="M365.7 384.3 282.7 299v-6.2l83-85 .2.1 98.4 55.9c28.1 16 28.1 42.1 0 58.1l-98.4 55.9-.2.5z"/>
+                <path fill="#ff3a44" d="M365.9 383.8 282.7 299 25.5 553.5c9.3 9.8 24.6 11 41.9 1.2l298.5-170.9"/>
+                <path fill="#00f076" d="M365.9 214.2 67.4 43.3C50.1 33.5 34.8 34.7 25.5 44.5L282.7 299l83.2-84.8z"/>
+              </svg>
+              <span class="btn-store-text">
+                <small>GET IT ON</small>
+                <strong>Google Play</strong>
+              </span>
+            </a>
+            <a class="btn btn-ghost" href="#demo">Try it below ↓</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>2</strong><span>game modes</span></li>
+            <li><strong>∞</strong><span>free matches</span></li>
+            <li><strong>0</strong><span>data collected</span></li>
+            <li><strong>3+</strong><span>age rated</span></li>
+          </ul>
+        </div>
+
+        <!-- Playable demo inside a phone mockup -->
+        <div class="phone reveal" id="demo">
+          <div class="phone-notch" aria-hidden="true"></div>
+          <div class="phone-screen">
+            <div class="demo-head">
+              <span class="demo-title">Tick Tac Toe</span>
+              <div class="demo-toggle" role="tablist" aria-label="Game mode">
+                <button id="modeAi" class="active" role="tab" aria-selected="true">vs AI</button>
+                <button id="mode2p" role="tab" aria-selected="false">2 Players</button>
+              </div>
+            </div>
+            <div class="demo-score">
+              <div class="score score-x"><span class="mark-x">X</span><b id="scoreX">0</b></div>
+              <div class="score-turn" id="turnLabel">Your turn</div>
+              <div class="score score-o"><span class="mark-o">O</span><b id="scoreO">0</b></div>
+            </div>
+            <div class="board" id="board" aria-label="Tic tac toe board">
+              <!-- 9 cells injected by script.js -->
+            </div>
+            <div class="demo-status" id="demoStatus">Tap a square to start</div>
+            <button class="btn btn-soft" id="resetBtn">New round</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURES ===================== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Features</span>
+          <h2>Simple on the surface, <span class="grad-text">polished underneath</span></h2>
+          <p>Everything you love about the classic — nothing you don't.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="card reveal">
+            <div class="card-icon">🤖</div>
+            <h3>Smart AI opponent</h3>
+            <p>Single-player mode against an AI that keeps every match interesting.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">👥</div>
+            <h3>Pass &amp; play 2-player</h3>
+            <p>Two-player mode on the same device — settle it face to face.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">✨</div>
+            <h3>Clean interface</h3>
+            <p>A user-friendly design that anyone can pick up in seconds.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">⚡</div>
+            <h3>Smooth gameplay</h3>
+            <p>Responsive, snappy controls with no lag between moves.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">📱</div>
+            <h3>Lightweight build</h3>
+            <p>Optimized and tiny — fast to download, easy on your battery.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">🔄</div>
+            <h3>Unlimited matches</h3>
+            <p>Play as many rounds as you like, anytime and anywhere.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MODES ===================== -->
+    <section class="section section-alt" id="modes">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Game modes</span>
+          <h2>Play <span class="grad-text">your way</span></h2>
+        </div>
+        <div class="modes">
+          <article class="mode-card reveal">
+            <div class="mode-badge mark-x">X</div>
+            <h3>Challenge the AI</h3>
+            <p>Take on a clever computer opponent that thinks ahead. Great for sharpening strategy, concentration, and problem-solving skills on your own.</p>
+          </article>
+          <article class="mode-card reveal">
+            <div class="mode-badge mark-o">O</div>
+            <h3>Duel a friend</h3>
+            <p>Two players, one device, alternating turns. First to line up three marks wins the bragging rights — rematches take one tap.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HOW TO PLAY ===================== -->
+    <section class="section" id="how-to-play">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">How to play</span>
+          <h2>Three in a row. <span class="grad-text">That's it.</span></h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="step-num">1</span>
+            <div>
+              <h3>Take turns</h3>
+              <p>Players alternate placing X and O on the 3×3 grid.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="step-num">2</span>
+            <div>
+              <h3>Line up three</h3>
+              <p>The first to get three marks in a row — horizontally, vertically, or diagonally — wins.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="step-num">3</span>
+            <div>
+              <h3>Draw &amp; rematch</h3>
+              <p>If the grid fills with no line, it's a draw. One tap and you're playing again.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <h2>Ready to play?</h2>
+          <p>Download Tick Tac Toe free on Google Play and enjoy the classic anytime.</p>
+          <a class="btn-store btn-store-lg" href="https://play.google.com/store/apps/details?id=com.susmita.game" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+            <svg class="play-tri" viewBox="0 0 512 566" aria-hidden="true">
+              <path fill="#00c4ff" d="M25.5 12.5C20 18.3 16.8 27.2 16.8 38.6v488.8c0 11.4 3.2 20.3 8.7 26.1l1.4 1.3L282.7 299v-6.2L26.9 11.2l-1.4 1.3z"/>
+              <path fill="#ffce00" d="M365.7 384.3 282.7 299v-6.2l83-85 .2.1 98.4 55.9c28.1 16 28.1 42.1 0 58.1l-98.4 55.9-.2.5z"/>
+              <path fill="#ff3a44" d="M365.9 383.8 282.7 299 25.5 553.5c9.3 9.8 24.6 11 41.9 1.2l298.5-170.9"/>
+              <path fill="#00f076" d="M365.9 214.2 67.4 43.3C50.1 33.5 34.8 34.7 25.5 44.5L282.7 299l83.2-84.8z"/>
+            </svg>
+            <span class="btn-store-text">
+              <small>GET IT ON</small>
+              <strong>Google Play</strong>
+            </span>
+          </a>
+          <p class="cta-note">Free · No ads required · No data collected</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg class="brand-icon" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#111a30"/>
+          <path d="M23 4v56M41 4v56M4 23h56M4 41h56" stroke="#33415e" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M8 8l10 10M18 8L8 18" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="32" cy="32" r="6.5" stroke="#fb7185" stroke-width="4" fill="none"/>
+          <path d="M46 46l10 10M56 46L46 56" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <strong>Tick Tac Toe</strong>
+          <p>by Puja Sets Nepal 🇳🇵</p>
+        </div>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#features">Features</a>
+        <a href="#modes">Modes</a>
+        <a href="#how-to-play">How to Play</a>
+        <a href="https://play.google.com/store/apps/details?id=com.susmita.game" target="_blank" rel="noopener">Google Play</a>
+        <a href="mailto:sg08873ieu@gmail.com">Support</a>
+      </nav>
+      <p class="footer-copy">© <span id="year"></span> Puja Sets Nepal. Privacy-first: no data shared, no data collected.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
