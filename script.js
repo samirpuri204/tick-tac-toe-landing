@@ -94,6 +94,7 @@ function aiMove() {
 
 function endRound(winner, winLine) {
   gameOver = true;
+  cellButtons.forEach((b) => (b.disabled = true));
   if (winner) {
     score[winner]++;
     scoreXEl.textContent = score.X;
